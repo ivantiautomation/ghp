@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!-- Ivanti Automation Building Blocks -->
+<!-- Created by t1\lnavacioiu on 6/8/2021 2:04:12 PM -->
+<AutomationManager>
+	<buildingblock version="3.0" bbpwh="E31IIta2s8+mfx6hhtwAwA==:20000:FLi9qAx2rvY2ltrAyulVmm88xb/09IZp8hOdEc0vEWA=">
+		<projects/>
+		<modules>
+			<module>
+				<properties>
+					<guid>{761CD40A-28E9-4C94-833C-6F6F1F074A94}</guid>
+					<name>module without resources</name>
+					<enabled>yes</enabled>
+					<description/>
+					<version>1.0.6</version>
+					<versioncomment>Updated version</versioncomment>
+					<properties>
+						<separators/>
+					</properties>
+					<folderpath>
+						<folder>
+							<name>_Releases</name>
+							<description/>
+							<guid>{5EFF9D9F-6CFD-4961-A179-B9FA82B38706}</guid>
+							<folder>
+								<name>2021.3</name>
+								<description/>
+								<guid>{2FF36770-5945-4070-A775-70E4D6523771}</guid>
+								<folder>
+									<name>SourceControl</name>
+									<description/>
+									<guid>{B8447153-7E34-44F6-AFDF-3ECEA183310C}</guid>
+								</folder>
+							</folder>
+						</folder>
+					</folderpath>
+					<deleteusedresources>yes</deleteusedresources>
+				</properties>
+				<tasks>
+					<task hidden="yes">
+						<limitinvoke>no</limitinvoke>
+						<parameters/>
+						<conditions>
+							<condition guid="{F32F736F-B31B-4357-A478-8F16622C35CF}">
+								<expressions/>
+								<operator>AND</operator>
+								<actiontrue>3</actiontrue>
+								<when>0</when>
+								<action>3</action>
+								<enabled>yes</enabled>
+							</condition>
+							<condition guid="{6A6E66B8-BF1B-4A36-8B61-DF03BA6EB918}">
+								<expressions/>
+								<operator>AND</operator>
+								<actiontrue>3</actiontrue>
+								<when>0</when>
+								<action>3</action>
+								<enabled>yes</enabled>
+							</condition>
+							<condition guid="{7E77F482-AC03-4BBA-A13E-391669E0EB37}">
+								<expressions/>
+								<operator>AND</operator>
+								<actiontrue>3</actiontrue>
+								<when>0</when>
+								<action>3</action>
+								<enabled>yes</enabled>
+							</condition>
+						</conditions>
+						<variablescontainer></variablescontainer>
+					</task>
+					<task>
+						<properties>
+							<type>QDOMAIN</type>
+							<guid>{F32F736F-B31B-4357-A478-8F16622C35CF}</guid>
+							<description>Query Computer Properties</description>
+							<enabled>yes</enabled>
+							<comments/>
+							<onerror>resume</onerror>
+						</properties>
+						<evaluators>
+							<evaluator>
+								<expressions/>
+								<operator>AND</operator>
+								<true>
+									<action>0</action>
+								</true>
+								<false>
+									<action>0</action>
+								</false>
+								<enabled>yes</enabled>
+							</evaluator>
+						</evaluators>
+					</task>
+					<task>
+						<properties>
+							<type>COMMAND</type>
+							<guid>{7E77F482-AC03-4BBA-A13E-391669E0EB37}</guid>
+							<description>Execute "@[SCRIPT]"</description>
+							<enabled>yes</enabled>
+							<comments/>
+							<onerror>fail</onerror>
+						</properties>
+						<settings>
+							<commandline>@[SCRIPT]</commandline>
+							<username/>
+							<password encrypted="yes">{015d45e3-c3ab-45e8-98e2-941328a099c8;s=00059;v=1;m=aes256}zlQOk24szSJc7GYLQs74kfENYHfkGvDanfOcMcphMlk=</password>
+							<loaduserprofile>no</loaduserprofile>
+							<usecmd>yes</usecmd>
+							<redirect>yes</redirect>
+							<failonerroutput>yes</failonerroutput>
+							<validateexitcode>no</validateexitcode>
+							<failifexitcode>no</failifexitcode>
+							<exitcodes>0</exitcodes>
+							<timeout>10</timeout>
+							<terminate>no</terminate>
+							<terminatetree>no</terminatetree>
+							<grablogfile/>
+							<script>whoami</script>
+							<scriptext>cmd</scriptext>
+						</settings>
+					</task>
+					<task>
+						<properties>
+							<type>PWRSHELL</type>
+							<guid>{6A6E66B8-BF1B-4A36-8B61-DF03BA6EB918}</guid>
+							<description>Execute Windows PowerShell Script</description>
+							<enabled>yes</enabled>
+							<comments/>
+							<onerror>fail</onerror>
+						</properties>
+						<settings>
+							<username/>
+							<password encrypted="yes">{015d45e3-c3ab-45e8-98e2-941328a099c8;s=00059;v=1;m=aes256}sIaY4fRkBSs2GrvDM8jCKTOw2rO10PhKVXYD0pr9v9M=</password>
+							<usescript>yes</usescript>
+							<source>test</source>
+							<scriptext>ps1</scriptext>
+							<outputwidth>256</outputwidth>
+							<validateexitcode>no</validateexitcode>
+							<failifexitcode>no</failifexitcode>
+							<exitcodes>0</exitcodes>
+							<timeout>10</timeout>
+							<terminate>no</terminate>
+							<snapins/>
+							<overrideexecutionpolicy>no</overrideexecutionpolicy>
+							<usex86psonx64>no</usex86psonx64>
+						</settings>
+					</task>
+				</tasks>
+			</module>
+		</modules>
+		<resources/>
+		<runbooks/>
+		<teams/>
+		<projectfolders/>
+		<modulefolders/>
+		<resourcefolders/>
+		<runbookfolders/>
+		<teamfolders/>
+	</buildingblock>
+</AutomationManager>
